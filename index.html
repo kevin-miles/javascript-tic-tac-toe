@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tic Tac Toe</title>
+    <meta charset="utf-8"> 
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="ttt.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+<h1>Tic Tac Toe</h1>
+<div id="game">
+
+        <div id="win_slant_line_reg" class="win_slant_line"></div>
+        <div id="win_horizontal_line_0" class="win_horizontal_line"></div>
+        <div id="win_horizontal_line_1" class="win_horizontal_line"></div>
+        <div id="win_horizontal_line_2" class="win_horizontal_line"></div>
+        <div id="win_slant_line_anti" class="win_slant_line"></div>
+        <div id="win_vertical_line_0" class="win_vertical_line"></div>
+        <div id="win_vertical_line_1" class="win_vertical_line"></div>
+        <div id="win_vertical_line_2" class="win_vertical_line"></div>
+    <div id="g0" class="block row">
+        <div id="g00" class="inlineblock piece"></div>
+        <div id="g01" class="inlineblock piece"></div>
+        <div id="g02" class="inlineblock piece"></div>
+    </div>
+    <div id="g1" class="block row">
+        <div id="g10" class="inlineblock piece"></div>
+        <div id="g11" class="inlineblock piece"></div>
+        <div id="g12" class="inlineblock piece"></div>
+    </div>
+    <div id="g2" class="block row">
+        <div id="g20" class="inlineblock piece"></div>
+        <div id="g21" class="inlineblock piece"></div>
+        <div id="g22" class="inlineblock piece"></div>
+    </div>
+	<div id="score_holder">
+		<div class = "score">Player: <span id="score_player">0</span></div>
+		<div class = "score">CPU: <span id="score_cpu">0</span></div>
+	</div>
+	<div id = "controls"><button type="button" id="reset_game">Reset Game</button><button type="button" id="reset_score">Reset Score</button></div>
+</div>
+</body>
+</html>

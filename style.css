@@ -1,0 +1,91 @@
+#game{
+	position: relative;
+}
+#controls {
+	margin: 5px 0 5px 0;
+}
+#score_holder{
+	position: relative;
+}
+.score {
+	display: inline-block;
+	margin: 0 5px 0 5px;
+}
+.piece {
+    height: 100px;
+    width:100px;
+    line-height: 100px;
+    background-color: #DDD;
+    margin: 3px 0px 3px 3px;
+    padding: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align:middle;
+    font-size: 48px;
+}
+.block {
+    display: block;
+}
+.inlineblock {
+    display: inline-block;
+}
+.fadedText {
+    color: #BBB;
+}
+.win_horizontal_line {
+	display: none;
+    border-bottom: 5px solid red;
+    position: absolute;
+    width:320px;
+    z-index: 10;
+    left:0px;
+}
+#win_horizontal_line_0 {
+    top:50px;
+}
+#win_horizontal_line_1 {
+    top:155px;
+}
+#win_horizontal_line_2 {
+    top:260px;
+}
+.win_vertical_line {
+	display: none;
+    border-right: 5px solid red;
+    position: absolute;
+    height:320px;
+    z-index: 10;
+    top:0px;
+}
+#win_vertical_line_0 {
+    left:50px;
+}
+#win_vertical_line_1 {
+    left:160px;
+}
+#win_vertical_line_2 {
+    left:265px;
+}
+#win_slant_line_anti {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#win_slant_line_reg {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.win_slant_line {
+	display: none;
+    border-right: 5px solid red;
+    position: absolute;
+    height: 445px;
+    z-index: 10;
+    top:-65px;
+    left: 160px;
+}
